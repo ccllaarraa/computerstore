@@ -45,6 +45,40 @@ color: rgb(133, 0, 0);
 .pink {
     color: rgb(255, 1, 166);
 }
+.blinking {
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    background-color: #FFE8E8;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 3s;
+    animation-fill-mode: forwards;
+    img {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        bottom: 0;
+        top: 0;
+    }
+
+}
+@-webkit-keyframes fadeOut {
+    0% { opacity: 1;}
+    99% { opacity: 0.01;;}
+    100% { opacity:  0;}
+}  
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    99% { opacity: 0.01;;}
+    100% { opacity:  0;}
+}
+
+
 .title {
    text-align: center;
     top: 20px;
