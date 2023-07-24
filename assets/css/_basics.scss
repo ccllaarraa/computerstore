@@ -70,12 +70,12 @@ color: rgb(133, 0, 0);
 @-webkit-keyframes fadeOut {
     0% { opacity: 1;}
     99% { opacity: 0.01;;}
-    100% { opacity:  0;}
+    100% { opacity:  0; z-index: -1;}
 }  
 @keyframes fadeOut {
     0% { opacity: 1;}
     99% { opacity: 0.01;;}
-    100% { opacity:  0;}
+    100% { opacity:  0; z-index: -1}
 }
 
 
